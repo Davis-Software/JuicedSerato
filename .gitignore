@@ -1,3 +1,5 @@
+.venv/
+.venv-wsl/
 dist/
 build/
 juicy_serato.egg-info/
