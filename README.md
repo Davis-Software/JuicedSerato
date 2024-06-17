@@ -13,3 +13,11 @@ with the Serato GEOB format. This will essentially transfer all cues into Serato
 * https://github.com/Holzhaus/serato-tags
 * https://github.com/Holzhaus/serato-tags/blob/main/docs/fileformats.md
 * https://github.com/DJUCED/DJUCED_DJ/blob/main/doc/meta-tags.md
+
+---
+### Development
+* Generate virtual env `python -m venv .venv`
+* Activate the venv
+* Install packages `pip install -r requirements.txt`
+* Install the package in edit mode `pip install -e .`
+* Build with `python -m build`
