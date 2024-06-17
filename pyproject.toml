@@ -19,7 +19,8 @@ classifiers = [
 dependencies = [
     "sqlalchemy",
     "click",
-    "mutagen"
+    "mutagen",
+    "tqdm"
 ]
 
 [project.urls]
