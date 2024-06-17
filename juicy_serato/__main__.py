@@ -1,5 +1,5 @@
-from . import cli_base
-from .cli import cli_inject, cli_copy
+from juicy_serato import cli_base
+from juicy_serato.cli import cli_inject, cli_copy
 
 
 if __name__ == "__main__":

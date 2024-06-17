@@ -2,10 +2,10 @@ import os
 import tqdm
 import shutil
 
-from .djuced.djuced_db_parser import DJucedDBParser
-from .serato.serato_db_parser import SeratoDBParser
-from .serato.serato_structs import CueEntry
-from .serato.serato_mappings import get_serato_color
+from juicy_serato.djuced.djuced_db_parser import DJucedDBParser
+from juicy_serato.serato.serato_db_parser import SeratoDBParser
+from juicy_serato.serato.serato_structs import CueEntry
+from juicy_serato.serato.serato_mappings import get_serato_color
 
 
 class SeratoJuicer(DJucedDBParser):
@@ -36,8 +36,6 @@ class SeratoJuicer(DJucedDBParser):
 
             with SeratoDBParser(file) as parser:
                 parser.set_markers(markers)
-
-            break
 
     def copy(self, location, use_tqdm: bool = True):
         if not os.path.exists(location):
