@@ -4,3 +4,4 @@ click
 mutagen
 build
 twine
+tqdm
