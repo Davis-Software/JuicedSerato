@@ -1,8 +1,4 @@
-from djuced.djuced_db_parser import DJucedDBParser
-
-from serato.serato_db_parser import SeratoDBParser
-from serato.serato_structs import CueEntry
-
+from src.juicy_serato.djuced.djuced_db_parser import DJucedDBParser
 
 if __name__ == '__main__':
     # with SeratoDBParser("sample_files/e.mp3") as sdj_p:
