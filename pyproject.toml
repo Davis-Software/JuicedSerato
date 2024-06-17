@@ -25,3 +25,6 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/Davis-Software/JuicedSerato"
 Issues = "https://github.com/Davis-Software/JuicedSerato/issues"
+
+[project.scripts]
+juicy_serato = "juicy_serato.__main__:cli_base"

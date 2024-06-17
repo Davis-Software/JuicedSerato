@@ -16,9 +16,3 @@ def start_gui_callback(ctx, _param, value):
 def cli_base(ctx, database):
     ctx.ensure_object(dict)
     ctx.obj["DATABASE"] = database
-
-
-if __name__ == "__main__":
-    from .cli import cli_inject
-
-    cli_base()
