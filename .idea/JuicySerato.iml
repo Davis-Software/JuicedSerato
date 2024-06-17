@@ -5,6 +5,7 @@
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/docs" />
       <excludeFolder url="file://$MODULE_DIR$/sample_files" />
+      <excludeFolder url="file://$MODULE_DIR$/.venv-wsl" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
       <excludeFolder url="file://$MODULE_DIR$/dist" />
     </content>

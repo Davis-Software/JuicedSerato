@@ -4,7 +4,7 @@ import base64
 import struct
 
 from mutagen import File
-from mutagen.id3 import GEOB, error
+from mutagen.id3 import GEOB
 
 from .serato_utils import get_entry_type, read_bytes
 
@@ -105,6 +105,7 @@ class SeratoDBParser:
 
     def set_markers(self, markers: list):
         data = self._dump_markers(markers)
+
         frame = GEOB(
             encoding=3,
             mime="application/octet-stream",
@@ -112,15 +113,15 @@ class SeratoDBParser:
             data=data
         )
 
-        if "GEOB:Serato Markers_" in self.audio.tags:
-            self.audio.tags.pop("GEOB:Serato Markers_")
-        if "GEOB:Serato Markers2" in self.audio.tags:
-            self.audio.tags.pop("GEOB:Serato Markers2")
+        if hasattr(self.audio, "tags") and self.audio.tags:
+            if "GEOB:Serato Markers_" in self.audio.tags:
+                self.audio.tags.pop("GEOB:Serato Markers_")
+            if "GEOB:Serato Markers2" in self.audio.tags:
+                self.audio.tags.pop("GEOB:Serato Markers2")
 
-        try:
-            self.audio.tags["GEOB:Serato Markers2"] = frame
-        except error:
+        if not hasattr(self.audio, "tags") or not self.audio.tags:
             self.audio.add_tags()
-            self.audio.tags["GEOB:Serato Markers2"] = frame
+
+        self.audio.tags["GEOB:Serato Markers2"] = frame
 
         self._changes_made = True

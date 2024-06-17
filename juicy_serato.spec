@@ -2,7 +2,7 @@
 
 
 a = Analysis(
-    ['juicy_serato\\__main__.py'],
+    ['juicy_serato/__main__.py'],
     pathex=[],
     binaries=[],
     datas=[],
