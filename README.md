@@ -6,7 +6,19 @@ This Project aims to enable users of the DJuiced DJ Software to write their conf
 with the Serato GEOB format. This will essentially transfer all cues into Serato.
 
 ---
-### this project is still under development
+### Installation
+You can Install JuicySerato through multiple sources
+* Via Python Package Index
+  * `pip install juicy_serato`
+* Download an executable
+  * Go to GitHubs Release section and download the correct executable file for your os.
+
+---
+### Usage
+* Inject Serato ID3 tags in-place:
+  * `juicy_serato -b <path to djuced db> inject`
+* Copy all Library files to a target folder and inject the ID3 tags into these:
+  * `juicy_serato -b <path to djuced db> copy <target path>`
 
 ---
 #### used resourced / open-source projects
