@@ -7,3 +7,9 @@ with the Serato GEOB format. This will essentially transfer all cues into Serato
 
 ---
 ### this project is still under development
+
+---
+#### used resourced / open-source projects
+* https://github.com/Holzhaus/serato-tags
+* https://github.com/Holzhaus/serato-tags/blob/main/docs/fileformats.md
+* https://github.com/DJUCED/DJUCED_DJ/blob/main/doc/meta-tags.md
