@@ -2,3 +2,5 @@ sqlalchemy
 pyinstaller
 click
 mutagen
+build
+twine

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "juicy_serato"
+version = "0.0.1"
+authors = [
+  { name="Davis_Software", email="davissoftware6@gmail.com" },
+]
+description = "Write song Cue data from the DJuced database to audio files in a Serato-compatible fromat"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "sqlalchemy",
+    "click",
+    "mutagen"
+]
+
+[project.urls]
+Homepage = "https://github.com/Davis-Software/JuicedSerato"
+Issues = "https://github.com/Davis-Software/JuicedSerato/issues"

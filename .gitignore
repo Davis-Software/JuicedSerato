@@ -1,1 +1,4 @@
 sample_files/
+dist/
+build/
+src/juicy_serato.egg-info
